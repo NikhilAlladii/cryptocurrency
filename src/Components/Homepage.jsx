@@ -27,22 +27,22 @@ function Homepage() {
   // const location = useLocation();
   let history = useHistory();
 
-  const getCustomersData = () => {
-    axios
-      .get("https://coinranking1.p.rapidapi.com/coins", {
-        headers: {
-          "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
-          "X-RapidAPI-Key":
-            "207bb68696msh7c2ab8791bda0adp103defjsn290b1ec659d4",
-        },
-      })
-      .then((response) => {
-        setCoins(response.data.data.coins);
-        setStats(response.data.data.stats);
-        console.log("coligvh", coins);
-      })
-      .catch((error) => console.log(error));
-  };
+  // const getCustomersData = () => {
+  //   axios
+  //     .get("https://coinranking1.p.rapidapi.com/coins", {
+  //       headers: {
+  //         "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
+  //         "X-RapidAPI-Key":
+  //           "207bb68696msh7c2ab8791bda0adp103defjsn290b1ec659d4",
+  //       },
+  //     })
+  //     .then((response) => {
+  //       setCoins(response.data.data.coins);
+  //       setStats(response.data.data.stats);
+  //       console.log("coligvh", coins);
+  //     })
+  //     .catch((error) => console.log(error));
+  // };
 
   const getNewsData = () => {
     axios
@@ -67,7 +67,20 @@ function Homepage() {
   }
 
   useEffect(() => {
-    getCustomersData();
+    // getCustomersData();
+    axios
+      .get("https://coinranking1.p.rapidapi.com/coins", {
+        headers: {
+          "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
+          "X-RapidAPI-Key":
+            "207bb68696msh7c2ab8791bda0adp103defjsn290b1ec659d4",
+        },
+      })
+      .then((response) => {
+        setCoins(response.data.data.coins);
+        setStats(response.data.data.stats);
+      })
+      .catch((error) => console.log(error));
     getNewsData();
   }, []);
 

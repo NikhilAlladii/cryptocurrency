@@ -13,6 +13,7 @@ import CryptoDetials from "./Components/CryptoDetials";
 import { BrowserRouter } from "react-router-dom";
 import SavedCoins from "./Components/SavedCoins";
 import NoDataFound from "./Components/NoDataFound";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
