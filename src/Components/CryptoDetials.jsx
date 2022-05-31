@@ -6,10 +6,10 @@ import DoneOutlineIcon from "@mui/icons-material/DoneOutline";
 import CancelIcon from "@mui/icons-material/Cancel";
 import ReactApexChart from "react-apexcharts";
 import { Pagination } from "react-rainbow-components";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { Typography } from "@mui/material";
-import ReactHtmlParser from "react-html-parser";
+// import ReactHtmlParser from "react-html-parser";
 // import { Accordion } from "react-bootstrap";
 
 function CryptoDetials() {
@@ -291,7 +291,13 @@ function CryptoDetials() {
           </Typography>
         </div>
 
-        <div>{ReactHtmlParser(coinData.description)}</div>
+        {/* <div>{ReactHtmlParser(coinData.description)}</div> */}
+
+        <div
+          dangerouslySetInnerHTML={{
+            __html: coinData.description,
+          }}
+        ></div>
 
         <div className="m-auto w-50 text-center my-3">
           <Typography variant="h5" className="my-2">
