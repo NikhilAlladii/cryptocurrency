@@ -4,8 +4,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-// import cryptoverse from "../Images/cryptocurrency.png";
-// import carousal1 from "../Images/imahe11.png";
 import carousal2 from "../Images/image2.webp";
 import carousal3 from "../Images/cryptocurrency.webp";
 import { Carousel } from "react-bootstrap";

@@ -1,16 +1,12 @@
 import axios from "axios";
 import "./CryptoDetials.css";
-// import moment from "moment";
 import React, { useEffect, useState } from "react";
 import DoneOutlineIcon from "@mui/icons-material/DoneOutline";
 import CancelIcon from "@mui/icons-material/Cancel";
 import ReactApexChart from "react-apexcharts";
 import { Pagination } from "react-rainbow-components";
-// import { useHistory } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { Typography } from "@mui/material";
-// import ReactHtmlParser from "react-html-parser";
-// import { Accordion } from "react-bootstrap";
 
 function CryptoDetials() {
   const location = useLocation();
@@ -206,12 +202,11 @@ function CryptoDetials() {
 
   useEffect(() => {
     const coinId = location.pathname.split("/");
-    console.log("coin id is", coinId[2]);
     getCoinHistoryData(coinId[2]);
     getHistoryData(coinId[2]);
     getExchageData(coinId[2]);
     getCoinData(coinId[2]);
-  }, []);
+  }, [location.pathname]);
 
   const series = [
     {

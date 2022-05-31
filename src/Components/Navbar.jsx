@@ -2,12 +2,9 @@ import React from "react";
 import cryptoverse from "../Images/cryptocurrency.png";
 import "./Navbar.css";
 import { useLocation } from "react-router-dom";
-// import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
-// import TrendingUpIcon from "@material-ui/icons/TrendingUp";
-// import AnnouncementIcon from "@material-ui/icons/Announcement";
 import { Typography } from "@mui/material";
 
 function Navbar() {

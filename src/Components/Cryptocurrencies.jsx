@@ -59,27 +59,27 @@ function Cryptocurrencies() {
   //   existingEntries.push(entry);
   //   localStorage.setItem("allEntries", JSON.stringify(existingEntries));
   // }
-  let saved = [];
-  saved = localStorage.getItem("allEntries");
-  const obj = JSON.parse(saved);
-  const obj1 = obj?.map((data) => {
-    return data.text;
-  });
+  // let saved = [];
+  // saved = localStorage.getItem("allEntries");
+  // const obj = JSON.parse(saved);
+  // const obj1 = obj?.map((data) => {
+  //   return data.text;
+  // });
 
   useEffect(() => {
     getCustomersData();
     // checkCoinThere();
   }, []);
 
-  function checkCoinThere(coin) {
-    const there = obj1?.includes(coin?.uuid);
-    return there;
-  }
+  // function checkCoinThere(coin) {
+  //   const there = obj1?.includes(coin?.uuid);
+  //   return there;
+  // }
 
-  function removeCoin(coin) {
-    const savedValue = obj.filter((item) => item.text !== coin?.uuid);
-    localStorage.setItem("allEntries", JSON.stringify(savedValue));
-  }
+  // function removeCoin(coin) {
+  //   const savedValue = obj.filter((item) => item.text !== coin?.uuid);
+  //   localStorage.setItem("allEntries", JSON.stringify(savedValue));
+  // }
 
   return (
     <div className="m-2 mx-4">

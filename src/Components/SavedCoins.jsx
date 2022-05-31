@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 function SavedCoins() {
   // const [coinData, setCoinData] = useState([]);
 
-  const coinsData = [];
+  // const coinsData = [];
 
   useEffect(() => {
     let saved = [];
@@ -29,13 +29,13 @@ function SavedCoins() {
         })
         .then((response) => {
           console.log(response.data.data.coin);
-          coinsData.push(response.data.data.coin);
+          // coinsData.push(response.data.data.coin);
           // setCoinData(response.data.data.coin);
         });
     }
   }, []);
 
-  console.log("coins Data is", coinsData);
+  // console.log("coins Data is", coinsData);
 
   return (
     <div>
