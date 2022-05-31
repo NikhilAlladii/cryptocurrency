@@ -2,13 +2,13 @@ import axios from "axios";
 import "./CryptoDetials.css";
 // import moment from "moment";
 import React, { useEffect, useState } from "react";
-import DoneOutlineIcon from "@material-ui/icons/DoneOutline";
-import CancelIcon from "@material-ui/icons/Cancel";
+import DoneOutlineIcon from "@mui/icons-material/DoneOutline";
+import CancelIcon from "@mui/icons-material/Cancel";
 import ReactApexChart from "react-apexcharts";
 import { Pagination } from "react-rainbow-components";
 import { useHistory } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import ReactHtmlParser from "react-html-parser";
 // import { Accordion } from "react-bootstrap";
 

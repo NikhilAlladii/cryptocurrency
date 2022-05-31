@@ -4,11 +4,11 @@ import "./Navbar.css";
 import { useLocation } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
-import HomeIcon from "@material-ui/icons/Home";
-import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
+import HomeIcon from "@mui/icons-material/Home";
+import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 // import TrendingUpIcon from "@material-ui/icons/TrendingUp";
 // import AnnouncementIcon from "@material-ui/icons/Announcement";
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 
 function Navbar() {
   const location = useLocation();
@@ -23,9 +23,9 @@ function Navbar() {
     history.push("/cryprocurrencies");
   }
 
-  function handleClickCryproExchanges() {
-    history.push("/exchanges");
-  }
+  // function handleClickCryproExchanges() {
+  //   history.push("/exchanges");
+  // }
 
   function handleClickCryproNews() {
     history.push("/news");

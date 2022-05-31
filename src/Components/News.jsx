@@ -1,8 +1,8 @@
-import { CardContent, Grid, Typography } from "@material-ui/core";
+import { CardContent, Grid, Typography } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Avatar, Card } from "react-rainbow-components";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 function News() {
   const [news, setNews] = useState([]);

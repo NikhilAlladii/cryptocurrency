@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 // import cryptoverse from "../Images/cryptocurrency.png";
 // import carousal1 from "../Images/imahe11.png";
 import carousal2 from "../Images/image2.webp";
@@ -13,12 +13,12 @@ import { Carousel } from "react-bootstrap";
 import Image1 from "../Images/twitter-inactive.3226e6ac.svg";
 import Image2 from "../Images/linkedin-inactive.8fe546f6.svg";
 import Image3 from "../Images/github-inactive.02ba6493.svg";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 import "./Homepage.css";
-import { Avatar } from "@material-ui/core";
+import { Avatar } from "@mui/material";
 import axios from "axios";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 function Homepage() {

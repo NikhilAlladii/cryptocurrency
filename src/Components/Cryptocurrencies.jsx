@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 // import cryptoverse from "../Images/cryptocurrency.png";
 // import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 import axios from "axios";
@@ -49,16 +49,16 @@ function Cryptocurrencies() {
     history.push(`/coin/${coin.uuid}`);
   }
 
-  function addEntry(coin) {
-    var existingEntries = JSON.parse(localStorage.getItem("allEntries"));
-    if (existingEntries == null) existingEntries = [];
-    var entry = {
-      text: coin?.uuid,
-    };
-    localStorage.setItem("entry", JSON.stringify(entry));
-    existingEntries.push(entry);
-    localStorage.setItem("allEntries", JSON.stringify(existingEntries));
-  }
+  // function addEntry(coin) {
+  //   var existingEntries = JSON.parse(localStorage.getItem("allEntries"));
+  //   if (existingEntries == null) existingEntries = [];
+  //   var entry = {
+  //     text: coin?.uuid,
+  //   };
+  //   localStorage.setItem("entry", JSON.stringify(entry));
+  //   existingEntries.push(entry);
+  //   localStorage.setItem("allEntries", JSON.stringify(existingEntries));
+  // }
   let saved = [];
   saved = localStorage.getItem("allEntries");
   const obj = JSON.parse(saved);
